@@ -5,6 +5,7 @@ import { Textarea } from "./components/ui/textarea";
 import { Label } from "./components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./components/ui/select";
 import { Slider } from "./components/ui/slider";
+import { ModeToggle } from "./components/mode-toggle";
 export function App() {
 
 
@@ -13,6 +14,8 @@ export function App() {
      <div className="px-6 py-3 flex items-center justify-between border-b " >
       <h1 className="text-xl font-bold " >Upload.ai</h1>
       <div className="flex items-center gap-3" >
+      <ModeToggle />
+      <Separator orientation="vertical" className="h-6" />
         <span className="text-sm text-muted-foreground" >Desenvolvido com 🤍 no NLW da Rocketseat</span>
        <Separator orientation="vertical" className="h-6" />
         <Button variant="outline"  >
